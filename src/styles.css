@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #222;
+    margin: 0;
+    padding: 25px;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 28px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.badge {
+    background: #ede9fe;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.subtitle {
+    color: #666;
+}
+
+.balance-card {
+    background: #ede9fe;
+    padding: 30px;
+    margin: 25px 0;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.balance-card h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#depositBtn {
+    background: #2563eb;
+    color: white;
+}
+
+#withdrawBtn {
+    background: #111827;
+    color: white;
+}
+
+#resetBtn {
+    width: 100%;
+    margin-top: 20px;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#status {
+    min-height: 24px;
+    margin: 20px 0;
+    color: #666;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 25px 0;
+}
+
+.history-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+#transactionCount {
+    font-size: 14px;
+    color: #777;
+}
+
+.transaction {
+    background: #f1f4f8;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+}
+
+.note {
+    font-size: 13px;
+    color: #777;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+}

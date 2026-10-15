@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AsyncBank Simulator</title>
+
+    <link rel="stylesheet" href="./src/styles.css">
+    <script src="./src/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>AsyncBank Simulator</h1>
+            <span class="badge">Async/Await Lab</span>
+        </header>
+
+        <p class="subtitle">
+            Simulating asynchronous banking transactions
+        </p>
+
+        <div class="balance-card">
+            <p>Current Balance</p>
+
+            <h2>
+                <span id="balance">20</span> tokens
+            </h2>
+        </div>
+
+        <div class="form-group">
+            <label for="amount">
+                Transaction Amount (tokens)
+            </label>
+
+            <input
+                type="number"
+                id="amount"
+                min="1"
+                step="1"
+                value="5"
+            >
+        </div>
+
+        <div class="buttons">
+            <button id="depositBtn">Deposit</button>
+            <button id="withdrawBtn">Withdraw</button>
+        </div>
+
+        <p id="status">
+            Ready to process transactions.
+        </p>
+
+        <hr>
+
+        <div class="history-header">
+            <h3>Transaction History</h3>
+
+            <span id="transactionCount">
+                0 transactions
+            </span>
+        </div>
+
+        <div id="history">
+            No transactions yet.
+        </div>
+
+        <button id="resetBtn">
+            Reset Simulation
+        </button>
+
+        <p class="note">
+            Transactions are simulated locally.
+            No blockchain network is used.
+        </p>
+
+    </div>
+
+</body>
+</html>
