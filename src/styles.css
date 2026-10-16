@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #222;
+    margin: 0;
+    padding: 25px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 28px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.badge {
+    background: #ede9fe;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.subtitle {
+    color: #666;
+}
+
+.wallet-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background: #f1f4f8;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 12px;
+}
+
+#connectBtn {
+    background: #2563eb;
+    color: white;
+    border: none;
+}
+
+.balance-card {
+    text-align: center;
+    background: #ede9fe;
+    border-radius: 15px;
+    padding: 28px;
+    margin: 25px 0;
+}
+
+.balance-card p {
+    color: #555;
+}
+
+.balance-card h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 14px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#depositBtn {
+    background: #16a34a;
+    color: white;
+    border: none;
+}
+
+#withdrawBtn {
+    background: #111827;
+    color: white;
+    border: none;
+}
+
+#resetBtn {
+    width: 100%;
+    margin-top: 20px;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#message {
+    min-height: 24px;
+    margin: 20px 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 25px 0;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.history-header span {
+    color: #777;
+    font-size: 14px;
+}
+
+.transaction {
+    background: #f1f4f8;
+    padding: 14px;
+    margin: 8px 0;
+    border-radius: 10px;
+}
+
+.note {
+    color: #777;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    header,
+    .wallet-status {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+}
+
+.balance-card.low-balance {
+  background: #fee2e2;
+  border: 2px solid #ef4444;
+}
+
+
