@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Transaction Manager</title>
+
+    <link rel="stylesheet" href="./src/styles.css">
+    <script src="./src/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Simple Transaction Manager</h1>
+            <span class="badge">Interactive Simulation</span>
+        </header>
+
+        <!-- Account Balances -->
+        <div class="accounts">
+
+            <div class="account alice">
+                <p>Alice</p>
+                <h2 id="aliceBalance">20</h2>
+                <p>Tokens</p>
+            </div>
+
+            <div class="account bob">
+                <p>Bob</p>
+                <h2 id="bobBalance">10</h2>
+                <p>Tokens</p>
+            </div>
+
+            <div class="account carol">
+                <p>Carol</p>
+                <h2 id="carolBalance">15</h2>
+                <p>Tokens</p>
+            </div>
+
+            <div class="account david">
+                <p>David</p>
+                <h2 id="davidBalance">30</h2>
+                <p>Tokens</p>   
+            </div>
+
+        </div>
+
+        <!-- Transfer Form -->
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="sender">Sender</label>
+
+                <select id="sender">
+                    <option value="Alice">Alice</option>
+                    <option value="Bob">Bob</option>
+                    <option value="Carol">Carol</option>
+                    <option value="David">David</option>    
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="receiver">Receiver</label>
+
+                <select id="receiver">
+                    <option value="Bob">Bob</option>
+                    <option value="Alice">Alice</option>
+                    <option value="Carol">Carol</option>
+                    <option value="David">David</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- Transfer Amount -->
+        <div class="form-group">
+            <label for="amount">Amount (tokens)</label>
+
+            <input
+                type="number"
+                id="amount"
+                min="1"
+                step="1"
+                value="5"
+            >
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="buttons">
+            <button id="transferBtn">Transfer</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+
+        <!-- Transaction Status -->
+        <p id="status">
+            Ready to process transactions.
+        </p>
+
+        <hr>
+
+        <!-- Transaction History -->
+        <div class="history-header">
+            <h3>Transaction History</h3>
+            <span id="transactionCount">0 transactions</span>
+        </div>
+
+        <div id="history">
+            No transactions yet.
+        </div>
+
+        <!-- Total Balance -->
+        <div class="total">
+            <h3>Total Balance</h3>
+            <strong>
+                <span id="totalBalance">45</span> tokens
+            </strong>
+        </div>
+
+        <p class="note">
+            This is a local JavaScript simulation,
+            not a blockchain transaction.
+        </p>
+
+    </div>
+</body>
+</html>

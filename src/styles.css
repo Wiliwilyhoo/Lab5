@@ -1,0 +1,205 @@
+
+/* General Page Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 25px;
+    color: #222;
+}
+
+/* Main Container */
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.badge {
+    background: #eeeeee;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Account Cards */
+
+.accounts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.account {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.account p {
+    margin: 5px;
+}
+
+.account h2 {
+    font-size: 30px;
+    margin: 10px;
+}
+.accounts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.alice {
+    background: #e3f1ff;
+}
+
+.bob {
+    background: #e4f8e9;
+}
+
+.carol {
+    background: #ffe8ec;
+}
+
+.david {
+    background: #f0e6ff;
+}
+
+/* Transfer Form */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 14px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#transferBtn {
+    flex: 1;
+    background: #111;
+    color: white;
+    border: none;
+}
+
+#resetBtn {
+    background: white;
+    border: 1px solid #ccc;
+}
+
+/* Transaction Status */
+
+#status {
+    color: #666;
+    min-height: 24px;
+}
+
+/* Transaction History */
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 25px 0;
+}
+
+.history-header,
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+#history {
+    margin: 15px 0;
+    color: #555;
+}
+
+.transaction {
+    background: #f1f4f8;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+/* Total Balance */
+
+.total {
+    margin-top: 30px;
+}
+
+/* Note */
+
+.note {
+    color: #777;
+    font-size: 13px;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 600px) {
+
+    .accounts {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+}
