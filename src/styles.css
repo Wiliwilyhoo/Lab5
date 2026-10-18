@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 28px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #6b7280;
+}
+
+.badge {
+    background: #ede9fe;
+    color: #5b21b6;
+    padding: 9px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.wallet-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    margin: 25px 0;
+    background: #eaf3ff;
+    border-radius: 12px;
+}
+
+.address {
+    color: #4b5563;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.copy-button {
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border: 1px solid #bfdbfe;
+    border-radius: 6px;
+    background: #fff;
+    color: #2563eb;
+    font-size: 17px;
+    line-height: 1;
+}
+
+.copy-button:hover {
+    background: #dbeafe;
+}
+
+button {
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#connectBtn,
+.switch-button {
+    background: #2563eb;
+    color: white;
+}
+
+.balance-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.balance-card {
+    background: #ede9fe;
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.balance-card.deposited {
+    background: #e4f8e9;
+}
+
+.balance-card p {
+    color: #4b5563;
+}
+
+.balance-card h2 {
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#depositBtn {
+    background: #16a34a;
+    color: white;
+}
+
+#withdrawBtn {
+    background: #111827;
+    color: white;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.status {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 10px;
+    background: #f3f4f6;
+    overflow-wrap: anywhere;
+}
+
+.status.success {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.status.error {
+    color: #991b1b;
+    background: #fee2e2;
+}
+
+.status.info {
+    color: #1d4ed8;
+    background: #eff6ff;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 25px 0;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#refreshBtn {
+    width: 100%;
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+}
+
+.note {
+    margin-top: 20px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    header,
+    .wallet-panel {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .balance-grid,
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+}
