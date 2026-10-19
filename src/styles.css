@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #6b7280;
+}
+
+.badge {
+    background: #ede9fe;
+    color: #5b21b6;
+    padding: 9px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.wallet-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    margin: 25px 0;
+    background: #eaf3ff;
+    border-radius: 12px;
+}
+
+.wallet-panel p {
+    margin-bottom: 0;
+    color: #4b5563;
+}
+
+.contract-info {
+    margin: 20px 0;
+    padding: 18px 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #f8fafc;
+}
+
+.contract-info h3 {
+    margin: 0 0 14px;
+}
+
+.contract-info dl {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 20px;
+    margin: 0;
+}
+
+.contract-info dt {
+    margin-bottom: 5px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.contract-info dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+    font-weight: bold;
+    font-variant-numeric: tabular-nums;
+}
+
+button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wallet-panel button {
+    background: #2563eb;
+    color: white;
+}
+
+.value-card {
+    padding: 35px 20px;
+    margin: 25px 0;
+    border-radius: 16px;
+    text-align: center;
+    background: #ede9fe;
+}
+
+.value-card p {
+    color: #4b5563;
+    font-weight: bold;
+}
+
+.value-card h2 {
+    font-size: 54px;
+    margin: 15px 0;
+    overflow-wrap: anywhere;
+}
+
+.value-card span {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.info-card {
+    padding: 20px;
+    background: #e4f8e9;
+    border-radius: 14px;
+}
+
+.info-card:nth-child(2) {
+    background: #fff3d6;
+}
+
+.info-card p {
+    color: #4b5563;
+}
+
+.info-card strong {
+    font-size: 20px;
+    overflow-wrap: anywhere;
+}
+
+label {
+    display: block;
+    margin: 20px 0 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.update-button {
+    width: 100%;
+    margin-top: 15px;
+    background: #16a34a;
+    color: white;
+}
+
+.reset-button {
+    width: 100%;
+    margin-top: 10px;
+    background: #dc2626;
+    color: white;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.status {
+    padding: 14px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #eff6ff;
+    overflow-wrap: anywhere;
+}
+
+.status.success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.receipt {
+    padding: 18px;
+    background: #f8fafc;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.hash {
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.value-change {
+    margin: 16px 0;
+    padding: 12px 14px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    font-variant-numeric: tabular-nums;
+}
+
+.value-change p {
+    display: grid;
+    grid-template-columns: 145px minmax(0, 1fr);
+    gap: 10px;
+    margin: 6px 0;
+}
+
+.value-change strong {
+    overflow-wrap: anywhere;
+}
+
+.receipt a,
+.history-item a {
+    color: #2563eb;
+}
+
+.history {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 25px;
+    padding-top: 15px;
+}
+
+.history-filter-label {
+    display: inline-block;
+    margin: 8px 10px 12px 0;
+}
+
+.history-filter {
+    min-width: 180px;
+    padding: 9px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    color: #1f2937;
+    font-size: 14px;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin: 8px 0;
+    background: #f1f4f8;
+    border-radius: 10px;
+}
+
+.history-item p {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.refresh-button {
+    width: 100%;
+    margin-top: 20px;
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+}
+
+.note {
+    margin-top: 20px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+
+    header,
+    .wallet-panel,
+    .history-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contract-info dl {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card h2 {
+        font-size: 38px;
+    }
+}
+
